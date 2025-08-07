@@ -1,0 +1,109 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #030303;
+    color: #f8f4f4;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('imagenes/fondo-mantenimiento.webp');
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    width: 90%;
+    animation: fadeIn 1s ease-out;
+}
+
+.logo-mantenimiento {
+    max-width: 150px;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    color: #e53935;
+    font-size: 2.8em;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 1.5rem;
+}
+
+.loading-bar {
+    width: 80%;
+    height: 15px;
+    background-color: #444;
+    border-radius: 8px;
+    margin: 2rem auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    width: 0;
+    background-color: #e53935;
+    border-radius: 8px;
+    animation: loadingProgress 3s infinite ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.small-text {
+    font-size: 0.9em;
+    color: #bbb;
+    margin-top: 2rem;
+}
+
+.home-link {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 10px 20px;
+    background-color: #b71c1c;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.home-link:hover {background-color: #e53935;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;
+        transform: translateY(-20px);
+    }
+    to { opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes loadingProgress {
+    0% { width: 0%; left: 0%; }
+    50% { width: 100%; left: 0%; }
+    100% { width: 0%; left: 100%; }
+}
+
+@media (max-width: 600px) {
+    .container {padding: 2rem;}
+
+    h1 {font-size: 2em;}
+
+    p {font-size: 1em;}
+}

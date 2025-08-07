@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radiohead - Sitio Oficial</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a href="#inicio"><img src="imagenes/Radiohead-Logo.png" alt="Logo de Radiohead"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre-la-banda">Sobre RadioHead</a></li>
+                    <li><a href="#el-album">El Álbum</a></li>
+                    <li><a href="mantenimiento.html">Merch</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="seccion">
+            <a href="#inicio" style="text-decoration:none;"><h1>El Último Concierto de Radiohead: Filadelfia, 2018</h1></a>
+            <p>Revive el que se considera el último concierto de Radiohead hasta la fecha, celebrado el **1 de agosto de 2018** en el Wells Fargo Center de Filadelfia, Estados Unidos. Fue el cierre de su gira "A Moon Shaped Pool" en Norteamérica, una noche memorable que los fans esperan que no sea la última.</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/yEaA4iU5eYc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="pie-video">Radiohead en el Wells Fargo Center, Filadelfia - 1 de Agosto de 2018</p>
+        </section>
+
+        <section id="sobre-la-banda" class="seccion">
+            <h2>Sobre Radiohead</h2>
+            <div class="bio-container">
+                <div class="image-wrapper">
+                    <img src="imagenes/foto del grupo.jpg" alt="Radiohead en vivo" class="foto-artista">
+                    <p class="image-caption">Radio-Head - Foto del Junio de 1995</p>
+                </div>
+                <div class="bio-text-wrapper">
+                    <p>Radiohead es una banda británica de rock alternativo formada en Abingdon-on-Thames en 1985. La banda está integrada por Thom Yorke (voz, guitarra, piano, teclados), Jonny Greenwood (guitarra principal, teclados, otros instrumentos), Ed O'Brien (guitarra, coros), Colin Greenwood (bajo) y Philip Selway (batería, percusión). </p>
+                    <p>Conocidos por su evolución sonora y experimentación, han sido aclamados por la crítica y han influenciado a numerosos artistas. "Amnesiac", lanzado en 2001, surgió de las mismas sesiones que su predecesor "Kid A", explorando texturas electrónicas, jazz e influencias de música clásica del siglo XX.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="el-album" class="seccion">
+            <h2>Nuestro Álbum mas escuchado: OK Computer</h2>
+            <h3>Haz clic en el ícono de play para escuchar la canción:</h3>
+            <ol class="tracklist">
+                <li onclick="playTrack('audios/paranoid-android.mp3')">
+                    Paranoid Android <span class="play-icon">►</span>
+                </li>
+                <li onclick="playTrack('audios/karma-police.mp3')">
+                    Karma Police <span class="play-icon">►</span>
+                </li>
+                <li onclick="playTrack('audios/no-surprises.mp3')">
+                    No Surprises <span class="play-icon">►</span>
+                </li>
+                <li onclick="playTrack('audios/exit-music.mp3')">
+                    Exit Music (For a Film) <span class="play-icon">►</span>
+                </li>
+                <li onclick="playTrack('audios/let-down.mp3')">
+                    Let Down<span class="play-icon">►</span>
+                </li>
+                <li onclick="playTrack('audios/airbag.mp3')">
+                    Airbag <span class="play-icon">►</span>
+                </li>
+                <li onclick="playTrack(null)">
+                    Subterranean Homesick Alien <span class="play-icon">►</span>
+                </li>
+                <li onclick="playTrack(null)">
+                    The Tourist <span class="play-icon">►</span>
+                </li>
+                <li onclick="playTrack(null)">
+                    Lucky <span class="play-icon">►</span>
+                </li>
+                <li onclick="playTrack(null)">
+                    Electioneering <span class="play-icon">►</span>
+                </li>
+            </ol>
+            <div id="audio-player-container" class="audio-player-container">
+                <audio id="audio-player" controls></audio>
+            </div>
+        </section>
+
+        <section id="contenido-album" class="seccion">
+            <h2>Contenido Destacado</h2>
+            <p>Echa un vistazo a las canciones más escuchadas que hemos hecho:</p>
+            <div class="song-panel">
+                <div class="song-item">
+                    <h4>Pyramid Song</h4>
+                    <p>Una pieza melancólica y atmosférica construida sobre un distintivo ritmo de piano.</p>
+                    <img src="imagenes/pyramidsong.jpg">
+                </div>
+                <div class="song-item">
+                    <h4>Knives Out</h4>
+                    <p>Reminiscencia del sonido de The Smiths, con guitarras intrincadas y una melodía pegadiza.</p>
+                    <img src="imagenes/kevin.jpg">
+                </div>
+                <div class="song-item">
+                    <h4>I Might Be Wrong</h4>
+                    <p>Impulsada por un riff de guitarra bluesero, elementos electrónicos sutiles y hace recordar una epoca de felicidad.</p>
+                    <img src="imagenes/i might.jpg">
+                </div>
+                <div class="song-item">
+                    <h4>Like Spinning Plates</h4>
+                    <p>Una pista experimental con voces reproducidas al revés y texturas electrónicas densas.</p>
+                    <img src="imagenes/like spinnigh.jpg">
+                </div>
+                <div class="song-item">
+                    <h4>Life in a Glasshouse</h4>
+                    <p>Cierre del álbum con influencias de jazz de Nueva Orleans, con la Humphrey Lyttelton Band.</p>
+                    <img src="imagenes/Radioheadamnesiac.webp">
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="seccion">
+            <h2>Contacto</h2>
+            <p>¿Quieres saber más o dejarnos un comentario?</p>
+            <form action="#" method="post" id="contact-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+                <button type="button" id="submit-btn">Enviar Mensaje</button>
+                <div id="success-message" class="success-message">
+                    ¡Mensaje enviado correctamente! Gracias por tu comentario.
+                </div>
+            </form>
+        </section>
+    </main>
